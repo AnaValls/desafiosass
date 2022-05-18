@@ -6,7 +6,7 @@ $font1: "barlow", sans-serif;
 $font2: "islant moments", cursive;
 $font3: "Moon dance", cursive;
 
-//colores
+// paleta de colores
 
 $color1: #65c2a3;
 $color2: #cc9a4e;
@@ -14,7 +14,18 @@ $color3: #d24504;
 $color4: #f3ca71;
 
 
+//sizes
 
+$size1: 100px;
+$size2: 50px;
+$size3: 25px;
+
+
+
+
+
+
+// secciones 
 
 p{ 
     font-size: 50px;
@@ -162,5 +173,75 @@ h2 {
 }
 
 
+$mapa1:  (  
+20px: red,
+40px: blue,
+60px: yellow,
+80px: black,
 
+);
+
+
+.mapa-rojo {
+
+background-color: #cc9a4e;
+border: 2px solid brown ;
+height: 100px;
+width: 100px;
+padding: 20px;
+
+
+}
+
+.mapa-azul{
+@extend .mapa-rojo;
+border-width: 3px;
+color:rgb(98, 73, 34);
+
+
+
+
+}
+
+.mapa-amarillo{
+
+    background-color: #cc9a4e;
+    font-size: $size3;
+    color:rgb(98, 73, 34);
+    text-align: center;
+
+
+}
    
+@mixin sizes ($height, $width, $bcolor) {
+height: $height;
+width: $width;
+background-color: $bcolor;
+
+}
+    
+.mapa-amarillo{
+@include sizes (100px, 150px, black)
+
+
+
+}
+
+.mapa-negro{
+@include sizes(100px,150px ,white )
+
+}
+
+.bucle {
+
+    border: 2px solid pink;
+}
+
+@for $i from 1 through 4 {
+    .mapa-#{$i} {
+
+width: 6em * $i;
+
+
+    }
+}

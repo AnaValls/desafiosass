@@ -1,11 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Islands+Moments&family=Moon+Dance&display=swap");
 p {
   font-size: 50px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "barlow", sans-serif;
   color: black;
   text-transform: capitalize;
   float: left;
@@ -16,7 +12,7 @@ p {
 header {
   width: 100%;
   height: 150px;
-  background-color: #cc9a4e;
+  background-color: #d24504;
   background-image: linear-gradient(rgb(98, 73, 34), #d24504);
 }
 header ul li {
@@ -30,7 +26,7 @@ header ul li a {
   font-size: 25px;
   margin-right: 10px;
   text-transform: capitalize;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "islant moments", cursive;
   text-shadow: 10px 10px 10px black;
 }
 header ul li a a:hover {
@@ -74,7 +70,7 @@ h1 {
   font-size: 30px;
   text-transform: uppercase;
   color: black;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "barlow", sans-serif;
 }
 
 h2 {
@@ -83,7 +79,7 @@ h2 {
   font-size: 40px;
   text-transform: uppercase;
   color: black;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "barlow", sans-serif;
 }
 
 .flex-container {
@@ -106,11 +102,11 @@ h2 {
   font-size: 30px;
   border: 2px solid #d24504;
   font-size: 25px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "barlow", sans-serif;
 }
 .flex-container p {
   background-color: black;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Moon dance", cursive;
   font-size: 25px;
   text-align: center;
   color: white;
@@ -128,6 +124,58 @@ h2 {
   background-image: url(../Liceo\ con\ Sass/foucault.jpg);
   background-size: contain;
   background-position: center;
+}
+
+.mapa-rojo, .mapa-azul {
+  background-color: #cc9a4e;
+  border: 2px solid brown;
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+}
+
+.mapa-azul {
+  border-width: 3px;
+  color: rgb(98, 73, 34);
+}
+
+.mapa-amarillo {
+  background-color: #cc9a4e;
+  font-size: 25px;
+  color: rgb(98, 73, 34);
+  text-align: center;
+}
+
+.mapa-amarillo {
+  height: 100px;
+  width: 150px;
+  background-color: black;
+}
+
+.mapa-negro {
+  height: 100px;
+  width: 150px;
+  background-color: white;
+}
+
+.bucle {
+  border: 2px solid pink;
+}
+
+.mapa-1 {
+  width: 6em;
+}
+
+.mapa-2 {
+  width: 12em;
+}
+
+.mapa-3 {
+  width: 18em;
+}
+
+.mapa-4 {
+  width: 24em;
 }
 
 /*# sourceMappingURL=estilo.css.map */
